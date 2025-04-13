@@ -13,6 +13,7 @@ import wushu.dto.LoginRequestDTO;
 import wushu.dto.RegisterRequestDTO;
 import wushu.entity.Role;
 import wushu.entity.User;
+import wushu.exception.NotFoundException;
 import wushu.repository.UserRepository;
 import wushu.util.JwtUtil;
 
@@ -88,5 +89,9 @@ public AuthResponseDTO register(RegisterRequestDTO registerRequest) {
 
     return new AuthResponseDTO(accessToken, refreshToken);
 }
+    public User getUserByUsername(String username) {
+        return userRepository.findByUsername(username)
+                .orElseThrow(() -> new NotFoundException("User not found with username: " + username));
+    }
 
 }

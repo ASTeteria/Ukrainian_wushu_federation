@@ -20,11 +20,5 @@ public class Athlete {
     @Enumerated(EnumType.STRING)
     private ProgramType programType;
 
-//    @Column(updatable = false)
-//    private String createdBy;
-//
-//    @PrePersist
-//    protected void onCreate() {
-//
-//    }
+    private Long userId;
 }

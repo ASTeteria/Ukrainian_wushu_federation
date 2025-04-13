@@ -7,5 +7,7 @@ databaseChangeLog:
             tableName: athlete
             columns:
               - column:
-                  name: created_by
-                  type: VARCHAR(255)
+                  name: user_id
+                  type: BIGINT
+                  constraints:
+                    nullable: true

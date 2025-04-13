@@ -1,5 +1,7 @@
 package wushu.service;
 
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import wushu.exception.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -16,6 +18,7 @@ import java.util.stream.Collectors;
 public class AthleteService {
     private final AthleteRepository athleteRepository;
     private final AthleteMapper athleteMapper;
+    private final AuthService authService;
 
     public List<AthleteDTO> getAllAthletes() {
 
@@ -34,6 +37,8 @@ public class AthleteService {
 
     public AthleteDTO createAthlete(AthleteDTO athleteDTO) {
         Athlete athlete = athleteMapper.toEntity(athleteDTO);
+        Long userId = getCurrentUserId();
+        athlete.setUserId(userId);
         Athlete savedAthlete = athleteRepository.save(athlete);
         return athleteMapper.toDto(savedAthlete);
     }
@@ -49,6 +54,10 @@ public AthleteDTO updateAthlete(Long id, AthleteDTO athleteDTO) {
     Athlete existingAthlete = athleteRepository.findById(id)
             .orElseThrow(() -> new NotFoundException("Athlete not found with id: " + id));
 
+    if (!isCurrentUserOwner(existingAthlete)){
+        throw new NotFoundException("Athlete is owned by another user");
+    }
+
     // Оновлюємо поля, але не змінюємо id
     existingAthlete.setFirstName(athleteDTO.firstName());
     existingAthlete.setLastName(athleteDTO.lastName());
@@ -59,9 +68,26 @@ public AthleteDTO updateAthlete(Long id, AthleteDTO athleteDTO) {
     return athleteMapper.toDto(updatedAthlete);
 }
     public void deleteAthlete(Long id) {
-        if(!athleteRepository.existsById(id)){
-            throw new NotFoundException("Athlete not found with id: " + id);
+//        if(!athleteRepository.existsById(id)){
+//            throw new NotFoundException("Athlete not found with id: " + id);
+//        }
+        Athlete athlete = athleteRepository.findById(id)
+                .orElseThrow(() -> new NotFoundException("Athlete not found with id: " + id));
+
+        if (!isCurrentUserOwner(athlete)){
+            throw new NotFoundException("Athlete is owned by another user");
         }
         athleteRepository.deleteById(id);
+    }
+
+    private Long getCurrentUserId() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String username = authentication.getName();
+        return authService.getUserByUsername(username).getId();
+
+    }
+
+    private boolean isCurrentUserOwner(Athlete athlete) {
+        return athlete.getUserId().equals(getCurrentUserId());
     }
 }

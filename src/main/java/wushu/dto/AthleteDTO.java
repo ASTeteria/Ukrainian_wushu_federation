@@ -21,5 +21,7 @@ public record AthleteDTO(
         Date birthDate,
 
         @NotNull(message = "Program is required")
-        ProgramType programType
+        ProgramType programType,
+
+        Long userId
 ) {}

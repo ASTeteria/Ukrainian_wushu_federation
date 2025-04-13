@@ -24,6 +24,7 @@ public interface AthleteMapper {
 //    @Mapping(target = "birthDate", source = "birthDate")
 //    @Mapping(target = "programType", source = "programType")
     Athlete toEntity(AthleteDTO athleteDTO);
+
     void updateEntity(@MappingTarget Athlete athlete, AthleteDTO athleteDTO);
 
 
