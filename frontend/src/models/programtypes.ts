@@ -1,1 +1,0 @@
-export type ProgramType = 'TAOLU_TRADITIONAL' | 'CONTACT' | 'TAOLU_SPORT';
