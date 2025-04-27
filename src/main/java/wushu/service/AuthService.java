@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -61,6 +62,14 @@ public class AuthService {
 //        return new AuthResponseDTO(accessToken, refreshToken);
 //    }
 public AuthResponseDTO register(RegisterRequestDTO registerRequest) {
+    Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+    boolean isSuperAdmin = authentication.getAuthorities().stream()
+            .map(GrantedAuthority::getAuthority)
+            .anyMatch(role -> role.equals("ROLE_SUPERADMIN"));
+
+    if (!isSuperAdmin) {
+        throw new RuntimeException("Тільки супер адміністратор може реєструвати нових користувачів.");
+    }
     if (userRepository.findByUsername(registerRequest.username()).isPresent()){
         throw new RuntimeException("Ім'я вже існує");
     }
@@ -88,7 +97,8 @@ public AuthResponseDTO register(RegisterRequestDTO registerRequest) {
     String refreshToken = jwtUtil.generateRefreshToken(userDetails);
 
     return new AuthResponseDTO(accessToken, refreshToken);
-}
+    }
+
     public User getUserByUsername(String username) {
         return userRepository.findByUsername(username)
                 .orElseThrow(() -> new NotFoundException("User not found with username: " + username));

@@ -20,4 +20,4 @@ jwt:
   access-token:
     ttl-millis: 6000000000
   refresh-token:
-    ttl-millis: 60000000000
+    ttl-millis: 70000000000

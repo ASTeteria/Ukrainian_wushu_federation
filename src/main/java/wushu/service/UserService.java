@@ -1,6 +1,7 @@
 package wushu.service;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import wushu.dto.UserDTO;
@@ -20,6 +21,7 @@ public class UserService {
 
     private final UserRepository userRepository;
     private final UserMapper userMapper;
+    private final PasswordEncoder passwordEncoder;
 
     @Transactional(readOnly = true)
     public List<UserDTO> getAllUsers() {
@@ -36,21 +38,32 @@ public class UserService {
                 .orElse(null);
     }
 
+    //    public UserDTO updateUserByUsername(String username, UserDTO userDTO) {
+//        User user = userRepository.findByUsername(username)
+//                .orElseThrow(() -> new NotFoundException("User not found with username: " + username));
+//
+//        // Оновлюйте лише ті поля, які присутні в DTO
+//        if (userDTO.username() != null) {
+//            user.setUsername(userDTO.username());
+//        }
+//        if (userDTO.password() != null) {
+//            user.setPassword(userDTO.password());
+//        }
+//        // Оновлюйте інші поля за потреби
+//
+//        User updatedUser = userRepository.save(user);
+//        return userMapper.toDto(updatedUser);
+//    }
+    @Transactional
     public UserDTO updateUserByUsername(String username, UserDTO userDTO) {
         User user = userRepository.findByUsername(username)
-                .orElseThrow(() -> new NotFoundException("User not found with username: " + username));
-
-        // Оновлюйте лише ті поля, які присутні в DTO
-        if (userDTO.username() != null) {
-            user.setUsername(userDTO.username());
+                .orElseThrow(() -> new RuntimeException("Користувача не знайдено"));
+        user.setUsername(userDTO.username());
+        if (userDTO.password() != null && !userDTO.password().isEmpty()) {
+            user.setPassword(passwordEncoder.encode(userDTO.password())); // Шифруємо пароль
         }
-        if (userDTO.password() != null) {
-            user.setPassword(userDTO.password());
-        }
-        // Оновлюйте інші поля за потреби
-
-        User updatedUser = userRepository.save(user);
-        return userMapper.toDto(updatedUser);
+        userRepository.save(user);
+        return userMapper.toDto(user);
     }
 }
 //
