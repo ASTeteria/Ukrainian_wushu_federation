@@ -21,6 +21,8 @@ public class ContactCompetitionApplication {
     @Enumerated(EnumType.STRING)
     private Gender gender;
 
+    private Long userId;
+
     @Enumerated(EnumType.STRING)
     private ContactAgeCategory ageCategory;
 

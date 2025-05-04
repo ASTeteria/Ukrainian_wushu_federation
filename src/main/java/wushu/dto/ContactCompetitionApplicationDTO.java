@@ -29,5 +29,6 @@ public record ContactCompetitionApplicationDTO(
         @NotNull(message = "Age category is required")
         ContactAgeCategory ageCategory,
         ContactProgram contactProgram,
-        WeightCategory weightCategory
+        WeightCategory weightCategory,
+        Long userId
 ) {}

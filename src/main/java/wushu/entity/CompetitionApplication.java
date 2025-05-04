@@ -37,4 +37,6 @@ public class CompetitionApplication {
     private LongWeaponProgram longWeaponProgram;
 
     private String duilian;
+
+    private Long userId;
 }

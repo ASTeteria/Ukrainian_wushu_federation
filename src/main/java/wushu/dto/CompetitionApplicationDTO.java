@@ -31,5 +31,6 @@ public record CompetitionApplicationDTO(
         WeaponlessProgram weaponlessProgram,
         ShortWeaponProgram shortWeaponProgram,
         LongWeaponProgram longWeaponProgram,
-        String duilian
+        String duilian,
+        Long userId
 ) {}

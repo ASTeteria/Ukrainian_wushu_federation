@@ -86,6 +86,11 @@ databaseChangeLog:
               - column:
                   name: duilian
                   type: VARCHAR(255)
+              - column:
+                  name: user_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
 
         - createTable:
             tableName: contact_competition_application
@@ -135,6 +140,11 @@ databaseChangeLog:
               - column:
                   name: weight_category
                   type: VARCHAR(50)
+              - column:
+                  name: user_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
         - createTable:
             tableName: users
             columns:

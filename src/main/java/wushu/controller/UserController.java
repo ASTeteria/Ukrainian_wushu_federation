@@ -3,6 +3,7 @@ package wushu.controller;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 import wushu.dto.UserDTO;
 import wushu.service.UserService;
@@ -35,5 +36,11 @@ public class UserController {
     public ResponseEntity<UserDTO> updateUserByUsername(@PathVariable String username, @Valid @RequestBody UserDTO userDTO) {
         UserDTO updatedUserDTO = userService.updateUserByUsername(username, userDTO);
         return ResponseEntity.ok(updatedUserDTO);
+    }
+    @DeleteMapping("/{id}")
+    @Secured("ROLE_SUPERADMIN")
+    public ResponseEntity<Void> deleteApplication(@PathVariable Long id) {
+        userService.deleteUser(id);
+        return ResponseEntity.noContent().build();
     }
 }

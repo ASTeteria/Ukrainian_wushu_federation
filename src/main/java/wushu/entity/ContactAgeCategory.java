@@ -7,7 +7,7 @@ public enum ContactAgeCategory {
     AGE_12_13("12-13років"),
     AGE_14_15("14-15років"),
     AGE_16_17("16-17років"),
-    AGE_18_PLUS("8 років і старше");
+    AGE_18_PLUS("18 років і старше");
 
 
     private final String displayName;

@@ -5,6 +5,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import wushu.dto.UserDTO;
+import wushu.entity.CompetitionApplication;
 import wushu.entity.User;
 import wushu.exception.NotFoundException;
 import wushu.mapper.UserMapper;
@@ -65,6 +66,13 @@ public class UserService {
         userRepository.save(user);
         return userMapper.toDto(user);
     }
+    public void deleteUser(Long id) {
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new NotFoundException("User not found with id: " + id));
+        userRepository.deleteById(id);
+    }
+
+
 }
 //
 //@Service

@@ -1,3 +1,460 @@
+/*!*!*!*!*!*!*!*.container {*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    max-width: 600px;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    margin: 50px auto;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    padding: 20px;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    background-color: #fff;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    border-radius: 8px;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    text-align: center;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*}*!*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*!*.logoutButton {*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    margin-top: 20px;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    padding: 10px 20px;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    background-color: #ff4d4f;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    color: white;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    border: none;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    font-size: 16px;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*}*!*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*!*.logoutButton:hover {*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    background-color: #d9363e;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*}*!*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*!*.registerButton {*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    margin-top: 20px;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    padding: 10px 20px;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    background-color: #1890ff;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    color: white;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    border: none;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    font-size: 16px;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*}*!*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*!*.registerButton:hover {*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    background-color: #40a9ff;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*}*!*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*!*.success {*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    color: #52c41a;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    margin-top: 1rem;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    font-weight: 500;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*}*!*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*!*.formWrapper {*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    display: flex;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    justify-content: center;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    align-items: center;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    min-height: 100vh;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    background-color: #f0f2f5;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    position: fixed;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    top: 0;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    left: 0;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    right: 0;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    bottom: 0;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*    z-index: 1000;*!*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*!*}*!*!*!*!*!*!*!*/
+
+
+/*!*!*!*!*!*!*.container {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    max-width: 600px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    margin: 50px auto;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    padding: 20px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background-color: #fff;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border-radius: 8px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    text-align: center;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.logoutButton {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    margin-top: 20px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    padding: 10px 20px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background-color: #ff4d4f;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    color: white;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border: none;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    font-size: 16px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.logoutButton:hover {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background-color: #d9363e;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.registerButton {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    margin-top: 20px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    padding: 10px 20px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background-color: #1890ff;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    color: white;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border: none;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    font-size: 16px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.registerButton:hover {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background-color: #40a9ff;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.usersButton {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    margin-top: 20px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    padding: 10px 20px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background-color: #fa8c16;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    color: white;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border: none;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    font-size: 16px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.usersButton:hover {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background-color: #f5a623;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.success {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    color: #52c41a;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    margin-top: 1rem;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    font-weight: 500;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.formWrapper {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    display: flex;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    justify-content: center;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    align-items: center;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    min-height: 100vh;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background-color: #f0f2f5;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    position: fixed;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    top: 0;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    left: 0;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    right: 0;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    bottom: 0;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    z-index: 1000;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.usersTable {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    width: 100%;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border-collapse: collapse;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    margin-top: 20px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.usersTable th,*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*.usersTable td {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border: 1px solid #d9d9d9;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    padding: 8px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    text-align: left;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.usersTable th {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background-color: #fafafa;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    font-weight: 500;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.editButton {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    padding: 6px 12px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background-color: #1890ff;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    color: white;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border: none;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.editButton:hover {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background-color: #40a9ff;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.editFormContainer {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background: white;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    padding: 2rem;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border-radius: 8px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    width: 100%;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    max-width: 400px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    text-align: center;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.form {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    display: flex;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    flex-direction: column;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    gap: 1rem;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.inputGroup {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    display: flex;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    flex-direction: column;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    text-align: left;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.inputGroup label {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    margin-bottom: 0.5rem;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    font-weight: 500;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.inputGroup input {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    padding: 0.75rem;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border: 1px solid #d9d9d9;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    font-size: 1rem;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.submitButton {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    padding: 0.75rem;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background-color: #52c41a;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    color: white;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border: none;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    font-size: 1rem;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.submitButton:hover {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background-color: #73d13d;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.cancelButton {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    padding: 0.75rem;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background-color: #ff4d4f;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    color: white;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border: none;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    font-size: 1rem;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    margin-top: 10px;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.cancelButton:hover {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    background-color: #d9363e;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+/*!*!*!*!*!*!*.error {*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    color: #ff4d4f;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*    margin-top: 0.5rem;*!*!*!*!*!*!*/
+/*!*!*!*!*!*!*}*!*!*!*!*!*!*/
+
+
+/*!*!*!*!*!*.container {*!*!*!*!*!*/
+/*!*!*!*!*!*    max-width: 600px;*!*!*!*!*!*/
+/*!*!*!*!*!*    margin: 50px auto;*!*!*!*!*!*/
+/*!*!*!*!*!*    padding: 20px;*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #fff;*!*!*!*!*!*/
+/*!*!*!*!*!*    border-radius: 8px;*!*!*!*!*!*/
+/*!*!*!*!*!*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*!*!*!*!*!*/
+/*!*!*!*!*!*    text-align: center;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.logoutButton {*!*!*!*!*!*/
+/*!*!*!*!*!*    margin-top: 20px;*!*!*!*!*!*/
+/*!*!*!*!*!*    padding: 10px 20px;*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #ff4d4f;*!*!*!*!*!*/
+/*!*!*!*!*!*    color: white;*!*!*!*!*!*/
+/*!*!*!*!*!*    border: none;*!*!*!*!*!*/
+/*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*/
+/*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*/
+/*!*!*!*!*!*    font-size: 16px;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.logoutButton:hover {*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #d9363e;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.registerButton {*!*!*!*!*!*/
+/*!*!*!*!*!*    margin-top: 20px;*!*!*!*!*!*/
+/*!*!*!*!*!*    padding: 10px 20px;*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #1890ff;*!*!*!*!*!*/
+/*!*!*!*!*!*    color: white;*!*!*!*!*!*/
+/*!*!*!*!*!*    border: none;*!*!*!*!*!*/
+/*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*/
+/*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*/
+/*!*!*!*!*!*    font-size: 16px;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.registerButton:hover {*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #40a9ff;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.usersButton {*!*!*!*!*!*/
+/*!*!*!*!*!*    margin-top: 20px;*!*!*!*!*!*/
+/*!*!*!*!*!*    padding: 10px 20px;*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #fa8c16;*!*!*!*!*!*/
+/*!*!*!*!*!*    color: white;*!*!*!*!*!*/
+/*!*!*!*!*!*    border: none;*!*!*!*!*!*/
+/*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*/
+/*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*/
+/*!*!*!*!*!*    font-size: 16px;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.usersButton:hover {*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #f5a623;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.athleteButton {*!*!*!*!*!*/
+/*!*!*!*!*!*    margin-top: 20px;*!*!*!*!*!*/
+/*!*!*!*!*!*    padding: 10px 20px;*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #52c41a;*!*!*!*!*!*/
+/*!*!*!*!*!*    color: white;*!*!*!*!*!*/
+/*!*!*!*!*!*    border: none;*!*!*!*!*!*/
+/*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*/
+/*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*/
+/*!*!*!*!*!*    font-size: 16px;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.athleteButton:hover {*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #73d13d;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.nonContactButton {*!*!*!*!*!*/
+/*!*!*!*!*!*    margin-top: 20px;*!*!*!*!*!*/
+/*!*!*!*!*!*    padding: 10px 20px;*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #722ed1;*!*!*!*!*!*/
+/*!*!*!*!*!*    color: white;*!*!*!*!*!*/
+/*!*!*!*!*!*    border: none;*!*!*!*!*!*/
+/*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*/
+/*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*/
+/*!*!*!*!*!*    font-size: 16px;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.nonContactButton:hover {*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #9254de;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.contactButton {*!*!*!*!*!*/
+/*!*!*!*!*!*    margin-top: 20px;*!*!*!*!*!*/
+/*!*!*!*!*!*    padding: 10px 20px;*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #eb2f96;*!*!*!*!*!*/
+/*!*!*!*!*!*    color: white;*!*!*!*!*!*/
+/*!*!*!*!*!*    border: none;*!*!*!*!*!*/
+/*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*/
+/*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*/
+/*!*!*!*!*!*    font-size: 16px;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.contactButton:hover {*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #f759ab;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.success {*!*!*!*!*!*/
+/*!*!*!*!*!*    color: #52c41a;*!*!*!*!*!*/
+/*!*!*!*!*!*    margin-top: 1rem;*!*!*!*!*!*/
+/*!*!*!*!*!*    font-weight: 500;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.formWrapper {*!*!*!*!*!*/
+/*!*!*!*!*!*    display: flex;*!*!*!*!*!*/
+/*!*!*!*!*!*    justify-content: center;*!*!*!*!*!*/
+/*!*!*!*!*!*    align-items: center;*!*!*!*!*!*/
+/*!*!*!*!*!*    min-height: 100vh;*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #f0f2f5;*!*!*!*!*!*/
+/*!*!*!*!*!*    position: fixed;*!*!*!*!*!*/
+/*!*!*!*!*!*    top: 0;*!*!*!*!*!*/
+/*!*!*!*!*!*    left: 0;*!*!*!*!*!*/
+/*!*!*!*!*!*    right: 0;*!*!*!*!*!*/
+/*!*!*!*!*!*    bottom: 0;*!*!*!*!*!*/
+/*!*!*!*!*!*    z-index: 1000;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.usersTable {*!*!*!*!*!*/
+/*!*!*!*!*!*    width: 100%;*!*!*!*!*!*/
+/*!*!*!*!*!*    border-collapse: collapse;*!*!*!*!*!*/
+/*!*!*!*!*!*    margin-top: 20px;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.usersTable th,*!*!*!*!*!*/
+/*!*!*!*!*!*.usersTable td {*!*!*!*!*!*/
+/*!*!*!*!*!*    border: 1px solid #d9d9d9;*!*!*!*!*!*/
+/*!*!*!*!*!*    padding: 8px;*!*!*!*!*!*/
+/*!*!*!*!*!*    text-align: left;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.usersTable th {*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #fafafa;*!*!*!*!*!*/
+/*!*!*!*!*!*    font-weight: 500;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.editButton {*!*!*!*!*!*/
+/*!*!*!*!*!*    padding: 6px 12px;*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #1890ff;*!*!*!*!*!*/
+/*!*!*!*!*!*    color: white;*!*!*!*!*!*/
+/*!*!*!*!*!*    border: none;*!*!*!*!*!*/
+/*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*/
+/*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.editButton:hover {*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #40a9ff;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.editFormContainer {*!*!*!*!*!*/
+/*!*!*!*!*!*    background: white;*!*!*!*!*!*/
+/*!*!*!*!*!*    padding: 2rem;*!*!*!*!*!*/
+/*!*!*!*!*!*    border-radius: 8px;*!*!*!*!*!*/
+/*!*!*!*!*!*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*!*!*!*!*!*/
+/*!*!*!*!*!*    width: 100%;*!*!*!*!*!*/
+/*!*!*!*!*!*    max-width: 400px;*!*!*!*!*!*/
+/*!*!*!*!*!*    text-align: center;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.form {*!*!*!*!*!*/
+/*!*!*!*!*!*    display: flex;*!*!*!*!*!*/
+/*!*!*!*!*!*    flex-direction: column;*!*!*!*!*!*/
+/*!*!*!*!*!*    gap: 1rem;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.inputGroup {*!*!*!*!*!*/
+/*!*!*!*!*!*    display: flex;*!*!*!*!*!*/
+/*!*!*!*!*!*    flex-direction: column;*!*!*!*!*!*/
+/*!*!*!*!*!*    text-align: left;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.inputGroup label {*!*!*!*!*!*/
+/*!*!*!*!*!*    margin-bottom: 0.5rem;*!*!*!*!*!*/
+/*!*!*!*!*!*    font-weight: 500;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.inputGroup input {*!*!*!*!*!*/
+/*!*!*!*!*!*    padding: 0.75rem;*!*!*!*!*!*/
+/*!*!*!*!*!*    border: 1px solid #d9d9d9;*!*!*!*!*!*/
+/*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*/
+/*!*!*!*!*!*    font-size: 1rem;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.submitButton {*!*!*!*!*!*/
+/*!*!*!*!*!*    padding: 0.75rem;*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #52c41a;*!*!*!*!*!*/
+/*!*!*!*!*!*    color: white;*!*!*!*!*!*/
+/*!*!*!*!*!*    border: none;*!*!*!*!*!*/
+/*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*/
+/*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*/
+/*!*!*!*!*!*    font-size: 1rem;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.submitButton:hover {*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #73d13d;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.cancelButton {*!*!*!*!*!*/
+/*!*!*!*!*!*    padding: 0.75rem;*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #ff4d4f;*!*!*!*!*!*/
+/*!*!*!*!*!*    color: white;*!*!*!*!*!*/
+/*!*!*!*!*!*    border: none;*!*!*!*!*!*/
+/*!*!*!*!*!*    border-radius: 4px;*!*!*!*!*!*/
+/*!*!*!*!*!*    cursor: pointer;*!*!*!*!*!*/
+/*!*!*!*!*!*    font-size: 1rem;*!*!*!*!*!*/
+/*!*!*!*!*!*    margin-top: 10px;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.cancelButton:hover {*!*!*!*!*!*/
+/*!*!*!*!*!*    background-color: #d9363e;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+/*!*!*!*!*!*.error {*!*!*!*!*!*/
+/*!*!*!*!*!*    color: #ff4d4f;*!*!*!*!*!*/
+/*!*!*!*!*!*    margin-top: 0.5rem;*!*!*!*!*!*/
+/*!*!*!*!*!*}*!*!*!*!*!*/
+
+
+
 /*!*!*!*!*.container {*!*!*!*!*/
 /*!*!*!*!*    max-width: 600px;*!*!*!*!*/
 /*!*!*!*!*    margin: 50px auto;*!*!*!*!*/
@@ -38,6 +495,66 @@
 /*!*!*!*!*    background-color: #40a9ff;*!*!*!*!*/
 /*!*!*!*!*}*!*!*!*!*/
 
+/*!*!*!*!*.usersButton {*!*!*!*!*/
+/*!*!*!*!*    margin-top: 20px;*!*!*!*!*/
+/*!*!*!*!*    padding: 10px 20px;*!*!*!*!*/
+/*!*!*!*!*    background-color: #fa8c16;*!*!*!*!*/
+/*!*!*!*!*    color: white;*!*!*!*!*/
+/*!*!*!*!*    border: none;*!*!*!*!*/
+/*!*!*!*!*    border-radius: 4px;*!*!*!*!*/
+/*!*!*!*!*    cursor: pointer;*!*!*!*!*/
+/*!*!*!*!*    font-size: 16px;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.usersButton:hover {*!*!*!*!*/
+/*!*!*!*!*    background-color: #f5a623;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.athleteButton {*!*!*!*!*/
+/*!*!*!*!*    margin-top: 20px;*!*!*!*!*/
+/*!*!*!*!*    padding: 10px 20px;*!*!*!*!*/
+/*!*!*!*!*    background-color: #52c41a;*!*!*!*!*/
+/*!*!*!*!*    color: white;*!*!*!*!*/
+/*!*!*!*!*    border: none;*!*!*!*!*/
+/*!*!*!*!*    border-radius: 4px;*!*!*!*!*/
+/*!*!*!*!*    cursor: pointer;*!*!*!*!*/
+/*!*!*!*!*    font-size: 16px;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.athleteButton:hover {*!*!*!*!*/
+/*!*!*!*!*    background-color: #73d13d;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.nonContactButton {*!*!*!*!*/
+/*!*!*!*!*    margin-top: 20px;*!*!*!*!*/
+/*!*!*!*!*    padding: 10px 20px;*!*!*!*!*/
+/*!*!*!*!*    background-color: #722ed1;*!*!*!*!*/
+/*!*!*!*!*    color: white;*!*!*!*!*/
+/*!*!*!*!*    border: none;*!*!*!*!*/
+/*!*!*!*!*    border-radius: 4px;*!*!*!*!*/
+/*!*!*!*!*    cursor: pointer;*!*!*!*!*/
+/*!*!*!*!*    font-size: 16px;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.nonContactButton:hover {*!*!*!*!*/
+/*!*!*!*!*    background-color: #9254de;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.contactButton {*!*!*!*!*/
+/*!*!*!*!*    margin-top: 20px;*!*!*!*!*/
+/*!*!*!*!*    padding: 10px 20px;*!*!*!*!*/
+/*!*!*!*!*    background-color: #eb2f96;*!*!*!*!*/
+/*!*!*!*!*    color: white;*!*!*!*!*/
+/*!*!*!*!*    border: none;*!*!*!*!*/
+/*!*!*!*!*    border-radius: 4px;*!*!*!*!*/
+/*!*!*!*!*    cursor: pointer;*!*!*!*!*/
+/*!*!*!*!*    font-size: 16px;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.contactButton:hover {*!*!*!*!*/
+/*!*!*!*!*    background-color: #f759ab;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
 /*!*!*!*!*.success {*!*!*!*!*/
 /*!*!*!*!*    color: #52c41a;*!*!*!*!*/
 /*!*!*!*!*    margin-top: 1rem;*!*!*!*!*/
@@ -56,6 +573,149 @@
 /*!*!*!*!*    right: 0;*!*!*!*!*/
 /*!*!*!*!*    bottom: 0;*!*!*!*!*/
 /*!*!*!*!*    z-index: 1000;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.usersTable {*!*!*!*!*/
+/*!*!*!*!*    width: 100%;*!*!*!*!*/
+/*!*!*!*!*    border-collapse: collapse;*!*!*!*!*/
+/*!*!*!*!*    margin-top: 20px;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.usersTable th,*!*!*!*!*/
+/*!*!*!*!*.usersTable td {*!*!*!*!*/
+/*!*!*!*!*    border: 1px solid #d9d9d9;*!*!*!*!*/
+/*!*!*!*!*    padding: 8px;*!*!*!*!*/
+/*!*!*!*!*    text-align: left;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.usersTable th {*!*!*!*!*/
+/*!*!*!*!*    background-color: #fafafa;*!*!*!*!*/
+/*!*!*!*!*    font-weight: 500;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.editButton {*!*!*!*!*/
+/*!*!*!*!*    padding: 6px 12px;*!*!*!*!*/
+/*!*!*!*!*    background-color: #1890ff;*!*!*!*!*/
+/*!*!*!*!*    color: white;*!*!*!*!*/
+/*!*!*!*!*    border: none;*!*!*!*!*/
+/*!*!*!*!*    border-radius: 4px;*!*!*!*!*/
+/*!*!*!*!*    cursor: pointer;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.editButton:hover {*!*!*!*!*/
+/*!*!*!*!*    background-color: #40a9ff;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.editFormContainer {*!*!*!*!*/
+/*!*!*!*!*    background: white;*!*!*!*!*/
+/*!*!*!*!*    padding: 2rem;*!*!*!*!*/
+/*!*!*!*!*    border-radius: 8px;*!*!*!*!*/
+/*!*!*!*!*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*!*!*!*!*/
+/*!*!*!*!*    width: 100%;*!*!*!*!*/
+/*!*!*!*!*    max-width: 400px;*!*!*!*!*/
+/*!*!*!*!*    text-align: center;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.athleteFormContainer {*!*!*!*!*/
+/*!*!*!*!*    background: white;*!*!*!*!*/
+/*!*!*!*!*    padding: 2rem;*!*!*!*!*/
+/*!*!*!*!*    border-radius: 8px;*!*!*!*!*/
+/*!*!*!*!*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*!*!*!*!*/
+/*!*!*!*!*    width: 100%;*!*!*!*!*/
+/*!*!*!*!*    max-width: 800px;*!*!*!*!*/
+/*!*!*!*!*    text-align: center;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.form {*!*!*!*!*/
+/*!*!*!*!*    display: flex;*!*!*!*!*/
+/*!*!*!*!*    flex-direction: column;*!*!*!*!*/
+/*!*!*!*!*    gap: 1rem;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.inputGroup {*!*!*!*!*/
+/*!*!*!*!*    display: flex;*!*!*!*!*/
+/*!*!*!*!*    flex-direction: column;*!*!*!*!*/
+/*!*!*!*!*    text-align: left;*!*!*!*!*/
+/*!*!*!*!*    margin-bottom: 1rem;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.inputGroup label {*!*!*!*!*/
+/*!*!*!*!*    margin-bottom: 0.5rem;*!*!*!*!*/
+/*!*!*!*!*    font-weight: 500;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.inputGroup input,*!*!*!*!*/
+/*!*!*!*!*.inputGroup select {*!*!*!*!*/
+/*!*!*!*!*    padding: 0.75rem;*!*!*!*!*/
+/*!*!*!*!*    border: 1px solid #d9d9d9;*!*!*!*!*/
+/*!*!*!*!*    border-radius: 4px;*!*!*!*!*/
+/*!*!*!*!*    font-size: 1rem;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.countInput {*!*!*!*!*/
+/*!*!*!*!*    width: 100px;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.athleteTable {*!*!*!*!*/
+/*!*!*!*!*    width: 100%;*!*!*!*!*/
+/*!*!*!*!*    border-collapse: collapse;*!*!*!*!*/
+/*!*!*!*!*    margin-top: 20px;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.athleteTable th,*!*!*!*!*/
+/*!*!*!*!*.athleteTable td {*!*!*!*!*/
+/*!*!*!*!*    border: 1px solid #d9d9d9;*!*!*!*!*/
+/*!*!*!*!*    padding: 8px;*!*!*!*!*/
+/*!*!*!*!*    text-align: left;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.athleteTable th {*!*!*!*!*/
+/*!*!*!*!*    background-color: #fafafa;*!*!*!*!*/
+/*!*!*!*!*    font-weight: 500;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.athleteTable input,*!*!*!*!*/
+/*!*!*!*!*.athleteTable select {*!*!*!*!*/
+/*!*!*!*!*    width: 100%;*!*!*!*!*/
+/*!*!*!*!*    padding: 0.5rem;*!*!*!*!*/
+/*!*!*!*!*    border: none;*!*!*!*!*/
+/*!*!*!*!*    font-size: 1rem;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.submitButton {*!*!*!*!*/
+/*!*!*!*!*    padding: 0.75rem;*!*!*!*!*/
+/*!*!*!*!*    background-color: #52c41a;*!*!*!*!*/
+/*!*!*!*!*    color: white;*!*!*!*!*/
+/*!*!*!*!*    border: none;*!*!*!*!*/
+/*!*!*!*!*    border-radius: 4px;*!*!*!*!*/
+/*!*!*!*!*    cursor: pointer;*!*!*!*!*/
+/*!*!*!*!*    font-size: 1rem;*!*!*!*!*/
+/*!*!*!*!*    margin-top: 1rem;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.submitButton:hover {*!*!*!*!*/
+/*!*!*!*!*    background-color: #73d13d;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.cancelButton {*!*!*!*!*/
+/*!*!*!*!*    padding: 0.75rem;*!*!*!*!*/
+/*!*!*!*!*    background-color: #ff4d4f;*!*!*!*!*/
+/*!*!*!*!*    color: white;*!*!*!*!*/
+/*!*!*!*!*    border: none;*!*!*!*!*/
+/*!*!*!*!*    border-radius: 4px;*!*!*!*!*/
+/*!*!*!*!*    cursor: pointer;*!*!*!*!*/
+/*!*!*!*!*    font-size: 1rem;*!*!*!*!*/
+/*!*!*!*!*    margin-top: 10px;*!*!*!*!*/
+/*!*!*!*!*    margin-left: 10px;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.cancelButton:hover {*!*!*!*!*/
+/*!*!*!*!*    background-color: #d9363e;*!*!*!*!*/
+/*!*!*!*!*}*!*!*!*!*/
+
+/*!*!*!*!*.error {*!*!*!*!*/
+/*!*!*!*!*    color: #ff4d4f;*!*!*!*!*/
+/*!*!*!*!*    margin-top: 0.5rem;*!*!*!*!*/
 /*!*!*!*!*}*!*!*!*!*/
 
 
@@ -112,6 +772,66 @@
 
 /*!*!*!*.usersButton:hover {*!*!*!*/
 /*!*!*!*    background-color: #f5a623;*!*!*!*/
+/*!*!*!*}*!*!*!*/
+
+/*!*!*!*.athleteButton {*!*!*!*/
+/*!*!*!*    margin-top: 20px;*!*!*!*/
+/*!*!*!*    padding: 10px 20px;*!*!*!*/
+/*!*!*!*    background-color: #52c41a;*!*!*!*/
+/*!*!*!*    color: white;*!*!*!*/
+/*!*!*!*    border: none;*!*!*!*/
+/*!*!*!*    border-radius: 4px;*!*!*!*/
+/*!*!*!*    cursor: pointer;*!*!*!*/
+/*!*!*!*    font-size: 16px;*!*!*!*/
+/*!*!*!*}*!*!*!*/
+
+/*!*!*!*.athleteButton:hover {*!*!*!*/
+/*!*!*!*    background-color: #73d13d;*!*!*!*/
+/*!*!*!*}*!*!*!*/
+
+/*!*!*!*.myAthletesButton {*!*!*!*/
+/*!*!*!*    margin-top: 20px;*!*!*!*/
+/*!*!*!*    padding: 10px 20px;*!*!*!*/
+/*!*!*!*    background-color: #13c2c2;*!*!*!*/
+/*!*!*!*    color: white;*!*!*!*/
+/*!*!*!*    border: none;*!*!*!*/
+/*!*!*!*    border-radius: 4px;*!*!*!*/
+/*!*!*!*    cursor: pointer;*!*!*!*/
+/*!*!*!*    font-size: 16px;*!*!*!*/
+/*!*!*!*}*!*!*!*/
+
+/*!*!*!*.myAthletesButton:hover {*!*!*!*/
+/*!*!*!*    background-color: #36cfc9;*!*!*!*/
+/*!*!*!*}*!*!*!*/
+
+/*!*!*!*.nonContactButton {*!*!*!*/
+/*!*!*!*    margin-top: 20px;*!*!*!*/
+/*!*!*!*    padding: 10px 20px;*!*!*!*/
+/*!*!*!*    background-color: #722ed1;*!*!*!*/
+/*!*!*!*    color: white;*!*!*!*/
+/*!*!*!*    border: none;*!*!*!*/
+/*!*!*!*    border-radius: 4px;*!*!*!*/
+/*!*!*!*    cursor: pointer;*!*!*!*/
+/*!*!*!*    font-size: 16px;*!*!*!*/
+/*!*!*!*}*!*!*!*/
+
+/*!*!*!*.nonContactButton:hover {*!*!*!*/
+/*!*!*!*    background-color: #9254de;*!*!*!*/
+/*!*!*!*}*!*!*!*/
+
+/*!*!*!*.contactButton {*!*!*!*/
+/*!*!*!*    margin-top: 20px;*!*!*!*/
+/*!*!*!*    padding: 10px 20px;*!*!*!*/
+/*!*!*!*    background-color: #eb2f96;*!*!*!*/
+/*!*!*!*    color: white;*!*!*!*/
+/*!*!*!*    border: none;*!*!*!*/
+/*!*!*!*    border-radius: 4px;*!*!*!*/
+/*!*!*!*    cursor: pointer;*!*!*!*/
+/*!*!*!*    font-size: 16px;*!*!*!*/
+/*!*!*!*}*!*!*!*/
+
+/*!*!*!*.contactButton:hover {*!*!*!*/
+/*!*!*!*    background-color: #f759ab;*!*!*!*/
 /*!*!*!*}*!*!*!*/
 
 /*!*!*!*.success {*!*!*!*/
@@ -175,6 +895,16 @@
 /*!*!*!*    text-align: center;*!*!*!*/
 /*!*!*!*}*!*!*!*/
 
+/*!*!*!*.athleteFormContainer {*!*!*!*/
+/*!*!*!*    background: white;*!*!*!*/
+/*!*!*!*    padding: 2rem;*!*!*!*/
+/*!*!*!*    border-radius: 8px;*!*!*!*/
+/*!*!*!*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*!*!*!*/
+/*!*!*!*    width: 100%;*!*!*!*/
+/*!*!*!*    max-width: 800px;*!*!*!*/
+/*!*!*!*    text-align: center;*!*!*!*/
+/*!*!*!*}*!*!*!*/
+
 /*!*!*!*.form {*!*!*!*/
 /*!*!*!*    display: flex;*!*!*!*/
 /*!*!*!*    flex-direction: column;*!*!*!*/
@@ -185,6 +915,7 @@
 /*!*!*!*    display: flex;*!*!*!*/
 /*!*!*!*    flex-direction: column;*!*!*!*/
 /*!*!*!*    text-align: left;*!*!*!*/
+/*!*!*!*    margin-bottom: 1rem;*!*!*!*/
 /*!*!*!*}*!*!*!*/
 
 /*!*!*!*.inputGroup label {*!*!*!*/
@@ -192,10 +923,41 @@
 /*!*!*!*    font-weight: 500;*!*!*!*/
 /*!*!*!*}*!*!*!*/
 
-/*!*!*!*.inputGroup input {*!*!*!*/
+/*!*!*!*.inputGroup input,*!*!*!*/
+/*!*!*!*.inputGroup select {*!*!*!*/
 /*!*!*!*    padding: 0.75rem;*!*!*!*/
 /*!*!*!*    border: 1px solid #d9d9d9;*!*!*!*/
 /*!*!*!*    border-radius: 4px;*!*!*!*/
+/*!*!*!*    font-size: 1rem;*!*!*!*/
+/*!*!*!*}*!*!*!*/
+
+/*!*!*!*.countInput {*!*!*!*/
+/*!*!*!*    width: 100px;*!*!*!*/
+/*!*!*!*}*!*!*!*/
+
+/*!*!*!*.athleteTable {*!*!*!*/
+/*!*!*!*    width: 100%;*!*!*!*/
+/*!*!*!*    border-collapse: collapse;*!*!*!*/
+/*!*!*!*    margin-top: 20px;*!*!*!*/
+/*!*!*!*}*!*!*!*/
+
+/*!*!*!*.athleteTable th,*!*!*!*/
+/*!*!*!*.athleteTable td {*!*!*!*/
+/*!*!*!*    border: 1px solid #d9d9d9;*!*!*!*/
+/*!*!*!*    padding: 8px;*!*!*!*/
+/*!*!*!*    text-align: left;*!*!*!*/
+/*!*!*!*}*!*!*!*/
+
+/*!*!*!*.athleteTable th {*!*!*!*/
+/*!*!*!*    background-color: #fafafa;*!*!*!*/
+/*!*!*!*    font-weight: 500;*!*!*!*/
+/*!*!*!*}*!*!*!*/
+
+/*!*!*!*.athleteTable input,*!*!*!*/
+/*!*!*!*.athleteTable select {*!*!*!*/
+/*!*!*!*    width: 100%;*!*!*!*/
+/*!*!*!*    padding: 0.5rem;*!*!*!*/
+/*!*!*!*    border: none;*!*!*!*/
 /*!*!*!*    font-size: 1rem;*!*!*!*/
 /*!*!*!*}*!*!*!*/
 
@@ -207,6 +969,7 @@
 /*!*!*!*    border-radius: 4px;*!*!*!*/
 /*!*!*!*    cursor: pointer;*!*!*!*/
 /*!*!*!*    font-size: 1rem;*!*!*!*/
+/*!*!*!*    margin-top: 1rem;*!*!*!*/
 /*!*!*!*}*!*!*!*/
 
 /*!*!*!*.submitButton:hover {*!*!*!*/
@@ -222,6 +985,7 @@
 /*!*!*!*    cursor: pointer;*!*!*!*/
 /*!*!*!*    font-size: 1rem;*!*!*!*/
 /*!*!*!*    margin-top: 10px;*!*!*!*/
+/*!*!*!*    margin-left: 10px;*!*!*!*/
 /*!*!*!*}*!*!*!*/
 
 /*!*!*!*.cancelButton:hover {*!*!*!*/
@@ -304,6 +1068,21 @@
 /*!*!*    background-color: #73d13d;*!*!*/
 /*!*!*}*!*!*/
 
+/*!*!*.myAthletesButton {*!*!*/
+/*!*!*    margin-top: 20px;*!*!*/
+/*!*!*    padding: 10px 20px;*!*!*/
+/*!*!*    background-color: #13c2c2;*!*!*/
+/*!*!*    color: white;*!*!*/
+/*!*!*    border: none;*!*!*/
+/*!*!*    border-radius: 4px;*!*!*/
+/*!*!*    cursor: pointer;*!*!*/
+/*!*!*    font-size: 16px;*!*!*/
+/*!*!*}*!*!*/
+
+/*!*!*.myAthletesButton:hover {*!*!*/
+/*!*!*    background-color: #36cfc9;*!*!*/
+/*!*!*}*!*!*/
+
 /*!*!*.nonContactButton {*!*!*/
 /*!*!*    margin-top: 20px;*!*!*/
 /*!*!*    padding: 10px 20px;*!*!*/
@@ -379,10 +1158,24 @@
 /*!*!*    border: none;*!*!*/
 /*!*!*    border-radius: 4px;*!*!*/
 /*!*!*    cursor: pointer;*!*!*/
+/*!*!*    margin-right: 8px;*!*!*/
 /*!*!*}*!*!*/
 
 /*!*!*.editButton:hover {*!*!*/
 /*!*!*    background-color: #40a9ff;*!*!*/
+/*!*!*}*!*!*/
+
+/*!*!*.deleteButton {*!*!*/
+/*!*!*    padding: 6px 12px;*!*!*/
+/*!*!*    background-color: #ff4d4f;*!*!*/
+/*!*!*    color: white;*!*!*/
+/*!*!*    border: none;*!*!*/
+/*!*!*    border-radius: 4px;*!*!*/
+/*!*!*    cursor: pointer;*!*!*/
+/*!*!*}*!*!*/
+
+/*!*!*.deleteButton:hover {*!*!*/
+/*!*!*    background-color: #d9363e;*!*!*/
 /*!*!*}*!*!*/
 
 /*!*!*.editFormContainer {*!*!*/
@@ -392,6 +1185,16 @@
 /*!*!*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*!*!*/
 /*!*!*    width: 100%;*!*!*/
 /*!*!*    max-width: 400px;*!*!*/
+/*!*!*    text-align: center;*!*!*/
+/*!*!*}*!*!*/
+
+/*!*!*.athleteFormContainer {*!*!*/
+/*!*!*    background: white;*!*!*/
+/*!*!*    padding: 2rem;*!*!*/
+/*!*!*    border-radius: 8px;*!*!*/
+/*!*!*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*!*!*/
+/*!*!*    width: 100%;*!*!*/
+/*!*!*    max-width: 800px;*!*!*/
 /*!*!*    text-align: center;*!*!*/
 /*!*!*}*!*!*/
 
@@ -405,6 +1208,7 @@
 /*!*!*    display: flex;*!*!*/
 /*!*!*    flex-direction: column;*!*!*/
 /*!*!*    text-align: left;*!*!*/
+/*!*!*    margin-bottom: 1rem;*!*!*/
 /*!*!*}*!*!*/
 
 /*!*!*.inputGroup label {*!*!*/
@@ -412,10 +1216,41 @@
 /*!*!*    font-weight: 500;*!*!*/
 /*!*!*}*!*!*/
 
-/*!*!*.inputGroup input {*!*!*/
+/*!*!*.inputGroup input,*!*!*/
+/*!*!*.inputGroup select {*!*!*/
 /*!*!*    padding: 0.75rem;*!*!*/
 /*!*!*    border: 1px solid #d9d9d9;*!*!*/
 /*!*!*    border-radius: 4px;*!*!*/
+/*!*!*    font-size: 1rem;*!*!*/
+/*!*!*}*!*!*/
+
+/*!*!*.countInput {*!*!*/
+/*!*!*    width: 100px;*!*!*/
+/*!*!*}*!*!*/
+
+/*!*!*.athleteTable {*!*!*/
+/*!*!*    width: 100%;*!*!*/
+/*!*!*    border-collapse: collapse;*!*!*/
+/*!*!*    margin-top: 20px;*!*!*/
+/*!*!*}*!*!*/
+
+/*!*!*.athleteTable th,*!*!*/
+/*!*!*.athleteTable td {*!*!*/
+/*!*!*    border: 1px solid #d9d9d9;*!*!*/
+/*!*!*    padding: 8px;*!*!*/
+/*!*!*    text-align: left;*!*!*/
+/*!*!*}*!*!*/
+
+/*!*!*.athleteTable th {*!*!*/
+/*!*!*    background-color: #fafafa;*!*!*/
+/*!*!*    font-weight: 500;*!*!*/
+/*!*!*}*!*!*/
+
+/*!*!*.athleteTable input,*!*!*/
+/*!*!*.athleteTable select {*!*!*/
+/*!*!*    width: 100%;*!*!*/
+/*!*!*    padding: 0.5rem;*!*!*/
+/*!*!*    border: none;*!*!*/
 /*!*!*    font-size: 1rem;*!*!*/
 /*!*!*}*!*!*/
 
@@ -427,6 +1262,7 @@
 /*!*!*    border-radius: 4px;*!*!*/
 /*!*!*    cursor: pointer;*!*!*/
 /*!*!*    font-size: 1rem;*!*!*/
+/*!*!*    margin-top: 1rem;*!*!*/
 /*!*!*}*!*!*/
 
 /*!*!*.submitButton:hover {*!*!*/
@@ -442,6 +1278,7 @@
 /*!*!*    cursor: pointer;*!*!*/
 /*!*!*    font-size: 1rem;*!*!*/
 /*!*!*    margin-top: 10px;*!*!*/
+/*!*!*    margin-left: 10px;*!*!*/
 /*!*!*}*!*!*/
 
 /*!*!*.cancelButton:hover {*!*!*/
@@ -452,11 +1289,8 @@
 /*!*!*    color: #ff4d4f;*!*!*/
 /*!*!*    margin-top: 0.5rem;*!*!*/
 /*!*!*}*!*!*/
-
-
-
 /*!*.container {*!*/
-/*!*    max-width: 600px;*!*/
+/*!*    max-width: 1200px;*!*/
 /*!*    margin: 50px auto;*!*/
 /*!*    padding: 20px;*!*/
 /*!*    background-color: #fff;*!*/
@@ -525,6 +1359,21 @@
 /*!*    background-color: #73d13d;*!*/
 /*!*}*!*/
 
+/*!*.myAthletesButton {*!*/
+/*!*    margin-top: 20px;*!*/
+/*!*    padding: 10px 20px;*!*/
+/*!*    background-color: #13c2c2;*!*/
+/*!*    color: white;*!*/
+/*!*    border: none;*!*/
+/*!*    border-radius: 4px;*!*/
+/*!*    cursor: pointer;*!*/
+/*!*    font-size: 16px;*!*/
+/*!*}*!*/
+
+/*!*.myAthletesButton:hover {*!*/
+/*!*    background-color: #36cfc9;*!*/
+/*!*}*!*/
+
 /*!*.nonContactButton {*!*/
 /*!*    margin-top: 20px;*!*/
 /*!*    padding: 10px 20px;*!*/
@@ -538,6 +1387,21 @@
 
 /*!*.nonContactButton:hover {*!*/
 /*!*    background-color: #9254de;*!*/
+/*!*}*!*/
+
+/*!*.checkApplicationButton {*!*/
+/*!*    margin-top: 20px;*!*/
+/*!*    padding: 10px 20px;*!*/
+/*!*    background-color: #eb2f96;*!*/
+/*!*    color: white;*!*/
+/*!*    border: none;*!*/
+/*!*    border-radius: 4px;*!*/
+/*!*    cursor: pointer;*!*/
+/*!*    font-size: 16px;*!*/
+/*!*}*!*/
+
+/*!*.checkApplicationButton:hover {*!*/
+/*!*    background-color: #f759ab;*!*/
 /*!*}*!*/
 
 /*!*.contactButton {*!*/
@@ -558,154 +1422,91 @@
 /*!*.success {*!*/
 /*!*    color: #52c41a;*!*/
 /*!*    margin-top: 1rem;*!*/
-/*!*    font-weight: 500;*!*/
+/*!*    font-size: 16px;*!*/
+/*!*}*!*/
+
+/*!*.error {*!*/
+/*!*    color: #ff4d4f;*!*/
+/*!*    margin-top: 1rem;*!*/
+/*!*    font-size: 14px;*!*/
 /*!*}*!*/
 
 /*!*.formWrapper {*!*/
-/*!*    display: flex;*!*/
-/*!*    justify-content: center;*!*/
-/*!*    align-items: center;*!*/
-/*!*    min-height: 100vh;*!*/
-/*!*    background-color: #f0f2f5;*!*/
-/*!*    position: fixed;*!*/
-/*!*    top: 0;*!*/
-/*!*    left: 0;*!*/
-/*!*    right: 0;*!*/
-/*!*    bottom: 0;*!*/
-/*!*    z-index: 1000;*!*/
-/*!*}*!*/
-
-/*!*.usersTable {*!*/
-/*!*    width: 100%;*!*/
-/*!*    border-collapse: collapse;*!*/
 /*!*    margin-top: 20px;*!*/
-/*!*}*!*/
-
-/*!*.usersTable th,*!*/
-/*!*.usersTable td {*!*/
-/*!*    border: 1px solid #d9d9d9;*!*/
-/*!*    padding: 8px;*!*/
-/*!*    text-align: left;*!*/
-/*!*}*!*/
-
-/*!*.usersTable th {*!*/
-/*!*    background-color: #fafafa;*!*/
-/*!*    font-weight: 500;*!*/
-/*!*}*!*/
-
-/*!*.editButton {*!*/
-/*!*    padding: 6px 12px;*!*/
-/*!*    background-color: #1890ff;*!*/
-/*!*    color: white;*!*/
-/*!*    border: none;*!*/
-/*!*    border-radius: 4px;*!*/
-/*!*    cursor: pointer;*!*/
-/*!*}*!*/
-
-/*!*.editButton:hover {*!*/
-/*!*    background-color: #40a9ff;*!*/
+/*!*    padding: 20px;*!*/
+/*!*    background-color: #f9f9f9;*!*/
+/*!*    border-radius: 8px;*!*/
 /*!*}*!*/
 
 /*!*.editFormContainer {*!*/
-/*!*    background: white;*!*/
-/*!*    padding: 2rem;*!*/
+/*!*    max-width: 500px;*!*/
+/*!*    margin: 0 auto;*!*/
+/*!*    padding: 20px;*!*/
+/*!*    background-color: #fff;*!*/
 /*!*    border-radius: 8px;*!*/
-/*!*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*!*/
-/*!*    width: 100%;*!*/
-/*!*    max-width: 400px;*!*/
-/*!*    text-align: center;*!*/
+/*!*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*!*/
 /*!*}*!*/
 
 /*!*.athleteFormContainer {*!*/
-/*!*    background: white;*!*/
-/*!*    padding: 2rem;*!*/
+/*!*    max-width: 100%;*!*/
+/*!*    margin: 0 auto;*!*/
+/*!*    padding: 20px;*!*/
+/*!*    background-color: #fff;*!*/
 /*!*    border-radius: 8px;*!*/
-/*!*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*!*/
-/*!*    width: 100%;*!*/
-/*!*    max-width: 800px;*!*/
-/*!*    text-align: center;*!*/
+/*!*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*!*/
+/*!*    overflow-x: auto;*!*/
 /*!*}*!*/
 
 /*!*.form {*!*/
 /*!*    display: flex;*!*/
 /*!*    flex-direction: column;*!*/
-/*!*    gap: 1rem;*!*/
+/*!*    gap: 15px;*!*/
 /*!*}*!*/
 
 /*!*.inputGroup {*!*/
 /*!*    display: flex;*!*/
 /*!*    flex-direction: column;*!*/
-/*!*    text-align: left;*!*/
-/*!*    margin-bottom: 1rem;*!*/
+/*!*    gap: 5px;*!*/
 /*!*}*!*/
 
 /*!*.inputGroup label {*!*/
-/*!*    margin-bottom: 0.5rem;*!*/
-/*!*    font-weight: 500;*!*/
+/*!*    font-weight: bold;*!*/
 /*!*}*!*/
 
 /*!*.inputGroup input,*!*/
 /*!*.inputGroup select {*!*/
-/*!*    padding: 0.75rem;*!*/
+/*!*    padding: 8px;*!*/
 /*!*    border: 1px solid #d9d9d9;*!*/
 /*!*    border-radius: 4px;*!*/
-/*!*    font-size: 1rem;*!*/
+/*!*    font-size: 14px;*!*/
 /*!*}*!*/
 
 /*!*.countInput {*!*/
 /*!*    width: 100px;*!*/
 /*!*}*!*/
 
-/*!*.athleteTable {*!*/
-/*!*    width: 100%;*!*/
-/*!*    border-collapse: collapse;*!*/
-/*!*    margin-top: 20px;*!*/
-/*!*}*!*/
-
-/*!*.athleteTable th,*!*/
-/*!*.athleteTable td {*!*/
-/*!*    border: 1px solid #d9d9d9;*!*/
-/*!*    padding: 8px;*!*/
-/*!*    text-align: left;*!*/
-/*!*}*!*/
-
-/*!*.athleteTable th {*!*/
-/*!*    background-color: #fafafa;*!*/
-/*!*    font-weight: 500;*!*/
-/*!*}*!*/
-
-/*!*.athleteTable input,*!*/
-/*!*.athleteTable select {*!*/
-/*!*    width: 100%;*!*/
-/*!*    padding: 0.5rem;*!*/
-/*!*    border: none;*!*/
-/*!*    font-size: 1rem;*!*/
-/*!*}*!*/
-
 /*!*.submitButton {*!*/
-/*!*    padding: 0.75rem;*!*/
-/*!*    background-color: #52c41a;*!*/
+/*!*    padding: 10px 20px;*!*/
+/*!*    background-color: #1890ff;*!*/
 /*!*    color: white;*!*/
 /*!*    border: none;*!*/
 /*!*    border-radius: 4px;*!*/
 /*!*    cursor: pointer;*!*/
-/*!*    font-size: 1rem;*!*/
-/*!*    margin-top: 1rem;*!*/
+/*!*    font-size: 16px;*!*/
 /*!*}*!*/
 
 /*!*.submitButton:hover {*!*/
-/*!*    background-color: #73d13d;*!*/
+/*!*    background-color: #40a9ff;*!*/
 /*!*}*!*/
 
 /*!*.cancelButton {*!*/
-/*!*    padding: 0.75rem;*!*/
+/*!*    padding: 10px 20px;*!*/
 /*!*    background-color: #ff4d4f;*!*/
 /*!*    color: white;*!*/
 /*!*    border: none;*!*/
 /*!*    border-radius: 4px;*!*/
 /*!*    cursor: pointer;*!*/
-/*!*    font-size: 1rem;*!*/
-/*!*    margin-top: 10px;*!*/
+/*!*    font-size: 16px;*!*/
 /*!*    margin-left: 10px;*!*/
 /*!*}*!*/
 
@@ -713,579 +1514,1375 @@
 /*!*    background-color: #d9363e;*!*/
 /*!*}*!*/
 
-/*!*.error {*!*/
-/*!*    color: #ff4d4f;*!*/
-/*!*    margin-top: 0.5rem;*!*/
+/*!*.usersTable,*!*/
+/*!*.athleteTable {*!*/
+/*!*    width: 100%;*!*/
+/*!*    border-collapse: collapse;*!*/
+/*!*    margin-top: 20px;*!*/
+/*!*}*!*/
+
+/*!*.usersTable th,*!*/
+/*!*.usersTable td,*!*/
+/*!*.athleteTable th,*!*/
+/*!*.athleteTable td {*!*/
+/*!*    border: 1px solid #d9d9d9;*!*/
+/*!*    padding: 10px;*!*/
+/*!*    text-align: left;*!*/
+/*!*}*!*/
+
+/*!*.usersTable th,*!*/
+/*!*.athleteTable th {*!*/
+/*!*    background-color: #f0f0f0;*!*/
+/*!*}*!*/
+
+/*!*.editButton {*!*/
+/*!*    padding: 5px 10px;*!*/
+/*!*    background-color: #fa8c16;*!*/
+/*!*    color: white;*!*/
+/*!*    border: none;*!*/
+/*!*    border-radius: 4px;*!*/
+/*!*    cursor: pointer;*!*/
+/*!*    font-size: 14px;*!*/
+/*!*}*!*/
+
+/*!*.editButton:hover {*!*/
+/*!*    background-color: #f5a623;*!*/
+/*!*}*!*/
+
+/*!*.deleteButton {*!*/
+/*!*    padding: 5px 10px;*!*/
+/*!*    background-color: #ff4d4f;*!*/
+/*!*    color: white;*!*/
+/*!*    border: none;*!*/
+/*!*    border-radius: 4px;*!*/
+/*!*    cursor: pointer;*!*/
+/*!*    font-size: 14px;*!*/
+/*!*    margin-left: 5px;*!*/
+/*!*}*!*/
+
+/*!*.deleteButton:hover {*!*/
+/*!*    background-color: #d9363e;*!*/
+/*!*}*!*/
+
+/*!*.athleteTable input,*!*/
+/*!*.athleteTable select {*!*/
+/*!*    width: 100%;*!*/
+/*!*    padding: 5px;*!*/
+/*!*    border: 1px solid #d9d9d9;*!*/
+/*!*    border-radius: 4px;*!*/
 /*!*}*!*/
 
 
 /*.container {*/
-/*    max-width: 600px;*/
-/*    margin: 50px auto;*/
+/*    max-width: 1200px;*/
+/*    margin: 0 auto;*/
 /*    padding: 20px;*/
-/*    background-color: #fff;*/
-/*    border-radius: 8px;*/
-/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
 /*    text-align: center;*/
 /*}*/
 
+/*.registerButton,*/
+/*.usersButton,*/
+/*.athleteButton,*/
+/*.myAthletesButton,*/
+/*.nonContactButton,*/
+/*.checkApplicationButton,*/
+/*.contactButton,*/
+/*.checkContactApplicationButton,*/
 /*.logoutButton {*/
-/*    margin-top: 20px;*/
-/*    padding: 10px 20px;*/
-/*    background-color: #ff4d4f;*/
+/*    background-color: #007bff;*/
 /*    color: white;*/
+/*    padding: 10px 20px;*/
 /*    border: none;*/
-/*    border-radius: 4px;*/
+/*    border-radius: 5px;*/
 /*    cursor: pointer;*/
+/*    margin: 10px;*/
 /*    font-size: 16px;*/
 /*}*/
 
+/*.registerButton:hover,*/
+/*.usersButton:hover,*/
+/*.athleteButton:hover,*/
+/*.myAthletesButton:hover,*/
+/*.nonContactButton:hover,*/
+/*.checkApplicationButton:hover,*/
+/*.contactButton:hover,*/
+/*.checkContactApplicationButton:hover,*/
 /*.logoutButton:hover {*/
-/*    background-color: #d9363e;*/
-/*}*/
-
-/*.registerButton {*/
-/*    margin-top: 20px;*/
-/*    padding: 10px 20px;*/
-/*    background-color: #1890ff;*/
-/*    color: white;*/
-/*    border: none;*/
-/*    border-radius: 4px;*/
-/*    cursor: pointer;*/
-/*    font-size: 16px;*/
-/*}*/
-
-/*.registerButton:hover {*/
-/*    background-color: #40a9ff;*/
-/*}*/
-
-/*.usersButton {*/
-/*    margin-top: 20px;*/
-/*    padding: 10px 20px;*/
-/*    background-color: #fa8c16;*/
-/*    color: white;*/
-/*    border: none;*/
-/*    border-radius: 4px;*/
-/*    cursor: pointer;*/
-/*    font-size: 16px;*/
-/*}*/
-
-/*.usersButton:hover {*/
-/*    background-color: #f5a623;*/
-/*}*/
-
-/*.athleteButton {*/
-/*    margin-top: 20px;*/
-/*    padding: 10px 20px;*/
-/*    background-color: #52c41a;*/
-/*    color: white;*/
-/*    border: none;*/
-/*    border-radius: 4px;*/
-/*    cursor: pointer;*/
-/*    font-size: 16px;*/
-/*}*/
-
-/*.athleteButton:hover {*/
-/*    background-color: #73d13d;*/
-/*}*/
-
-/*.myAthletesButton {*/
-/*    margin-top: 20px;*/
-/*    padding: 10px 20px;*/
-/*    background-color: #13c2c2;*/
-/*    color: white;*/
-/*    border: none;*/
-/*    border-radius: 4px;*/
-/*    cursor: pointer;*/
-/*    font-size: 16px;*/
-/*}*/
-
-/*.myAthletesButton:hover {*/
-/*    background-color: #36cfc9;*/
-/*}*/
-
-/*.nonContactButton {*/
-/*    margin-top: 20px;*/
-/*    padding: 10px 20px;*/
-/*    background-color: #722ed1;*/
-/*    color: white;*/
-/*    border: none;*/
-/*    border-radius: 4px;*/
-/*    cursor: pointer;*/
-/*    font-size: 16px;*/
-/*}*/
-
-/*.nonContactButton:hover {*/
-/*    background-color: #9254de;*/
-/*}*/
-
-/*.contactButton {*/
-/*    margin-top: 20px;*/
-/*    padding: 10px 20px;*/
-/*    background-color: #eb2f96;*/
-/*    color: white;*/
-/*    border: none;*/
-/*    border-radius: 4px;*/
-/*    cursor: pointer;*/
-/*    font-size: 16px;*/
-/*}*/
-
-/*.contactButton:hover {*/
-/*    background-color: #f759ab;*/
-/*}*/
-
-/*.success {*/
-/*    color: #52c41a;*/
-/*    margin-top: 1rem;*/
-/*    font-weight: 500;*/
+/*    background-color: #0056b3;*/
 /*}*/
 
 /*.formWrapper {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    min-height: 100vh;*/
-/*    background-color: #f0f2f5;*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    bottom: 0;*/
-/*    z-index: 1000;*/
-/*}*/
-
-/*.usersTable {*/
-/*    width: 100%;*/
-/*    border-collapse: collapse;*/
 /*    margin-top: 20px;*/
 /*}*/
 
-/*.usersTable th,*/
-/*.usersTable td {*/
-/*    border: 1px solid #d9d9d9;*/
-/*    padding: 8px;*/
-/*    text-align: left;*/
-/*}*/
-
-/*.usersTable th {*/
-/*    background-color: #fafafa;*/
-/*    font-weight: 500;*/
-/*}*/
-
-/*.editButton {*/
-/*    padding: 6px 12px;*/
-/*    background-color: #1890ff;*/
-/*    color: white;*/
-/*    border: none;*/
-/*    border-radius: 4px;*/
-/*    cursor: pointer;*/
-/*}*/
-
-/*.editButton:hover {*/
-/*    background-color: #40a9ff;*/
-/*}*/
-
-/*.editFormContainer {*/
-/*    background: white;*/
-/*    padding: 2rem;*/
-/*    border-radius: 8px;*/
-/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
-/*    width: 100%;*/
-/*    max-width: 400px;*/
-/*    text-align: center;*/
-/*}*/
-
+/*.editFormContainer,*/
 /*.athleteFormContainer {*/
-/*    background: white;*/
-/*    padding: 2rem;*/
+/*    background: #f9f9f9;*/
+/*    padding: 20px;*/
 /*    border-radius: 8px;*/
-/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
-/*    width: 100%;*/
-/*    max-width: 800px;*/
-/*    text-align: center;*/
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+/*    max-width: 100%;*/
+/*    margin: 0 auto;*/
 /*}*/
 
 /*.form {*/
 /*    display: flex;*/
 /*    flex-direction: column;*/
-/*    gap: 1rem;*/
+/*    gap: 15px;*/
 /*}*/
 
 /*.inputGroup {*/
 /*    display: flex;*/
 /*    flex-direction: column;*/
 /*    text-align: left;*/
-/*    margin-bottom: 1rem;*/
 /*}*/
 
 /*.inputGroup label {*/
-/*    margin-bottom: 0.5rem;*/
-/*    font-weight: 500;*/
+/*    margin-bottom: 5px;*/
+/*    font-weight: bold;*/
 /*}*/
 
 /*.inputGroup input,*/
 /*.inputGroup select {*/
-/*    padding: 0.75rem;*/
-/*    border: 1px solid #d9d9d9;*/
+/*    padding: 8px;*/
+/*    border: 1px solid #ccc;*/
 /*    border-radius: 4px;*/
-/*    font-size: 1rem;*/
+/*    font-size: 14px;*/
 /*}*/
 
 /*.countInput {*/
 /*    width: 100px;*/
+/*    margin-bottom: 15px;*/
 /*}*/
 
+/*.usersTable,*/
 /*.athleteTable {*/
 /*    width: 100%;*/
 /*    border-collapse: collapse;*/
 /*    margin-top: 20px;*/
 /*}*/
 
+/*.usersTable th,*/
+/*.usersTable td,*/
 /*.athleteTable th,*/
 /*.athleteTable td {*/
-/*    border: 1px solid #d9d9d9;*/
-/*    padding: 8px;*/
-/*    text-align: left;*/
+/*    border: 1px solid #ddd;*/
+/*    padding: 10px;*/
+/*    text-align: center;*/
 /*}*/
 
+/*.usersTable th,*/
 /*.athleteTable th {*/
-/*    background-color: #fafafa;*/
-/*    font-weight: 500;*/
+/*    background-color: #007bff;*/
+/*    color: white;*/
 /*}*/
 
-/*.athleteTable input,*/
-/*.athleteTable select {*/
-/*    width: 100%;*/
-/*    padding: 0.5rem;*/
+/*.editButton,*/
+/*.deleteButton,*/
+/*.submitButton,*/
+/*.cancelButton {*/
+/*    padding: 8px 15px;*/
 /*    border: none;*/
-/*    font-size: 1rem;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*.editButton {*/
+/*    background-color: #28a745;*/
+/*    color: white;*/
+/*    margin-right: 5px;*/
+/*}*/
+
+/*.editButton:hover {*/
+/*    background-color: #218838;*/
+/*}*/
+
+/*.deleteButton {*/
+/*    background-color: #dc3545;*/
+/*    color: white;*/
+/*}*/
+
+/*.deleteButton:hover {*/
+/*    background-color: #c82333;*/
 /*}*/
 
 /*.submitButton {*/
-/*    padding: 0.75rem;*/
-/*    background-color: #52c41a;*/
+/*    background-color: #007bff;*/
 /*    color: white;*/
-/*    border: none;*/
-/*    border-radius: 4px;*/
-/*    cursor: pointer;*/
-/*    font-size: 1rem;*/
-/*    margin-top: 1rem;*/
 /*}*/
 
 /*.submitButton:hover {*/
-/*    background-color: #73d13d;*/
+/*    background-color: #0056b3;*/
 /*}*/
 
 /*.cancelButton {*/
-/*    padding: 0.75rem;*/
-/*    background-color: #ff4d4f;*/
+/*    background-color: #6c757d;*/
 /*    color: white;*/
-/*    border: none;*/
-/*    border-radius: 4px;*/
-/*    cursor: pointer;*/
-/*    font-size: 1rem;*/
-/*    margin-top: 10px;*/
-/*    margin-left: 10px;*/
 /*}*/
 
 /*.cancelButton:hover {*/
-/*    background-color: #d9363e;*/
+/*    background-color: #5a6268;*/
+/*}*/
+
+/*.success {*/
+/*    color: green;*/
+/*    margin-top: 10px;*/
 /*}*/
 
 /*.error {*/
-/*    color: #ff4d4f;*/
-/*    margin-top: 0.5rem;*/
+/*    color: red;*/
+/*    margin-top: 10px;*/
 /*}*/
 
 
+/*.container {*/
+/*    max-width: 1200px;*/
+/*    margin: 0 auto;*/
+/*    padding: 20px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.registerButton,*/
+/*.usersButton,*/
+/*.athleteButton,*/
+/*.myAthletesButton,*/
+/*.nonContactButton,*/
+/*.contactButton,*/
+/*.checkApplicationButton,*/
+/*.checkContactButton,*/
+/*.logoutButton {*/
+/*    background-color: #007bff;*/
+/*    color: white;*/
+/*    padding: 10px 20px;*/
+/*    margin: 10px;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*.registerButton:hover,*/
+/*.usersButton:hover,*/
+/*.athleteButton:hover,*/
+/*.myAthletesButton:hover,*/
+/*.nonContactButton:hover,*/
+/*.contactButton:hover,*/
+/*.checkApplicationButton:hover,*/
+/*.checkContactButton:hover,*/
+/*.logoutButton:hover {*/
+/*    background-color: #0056b3;*/
+/*}*/
+
+/*.logoutButton {*/
+/*    background-color: #dc3545;*/
+/*}*/
+
+/*.logoutButton:hover {*/
+/*    background-color: #c82333;*/
+/*}*/
+
+/*.formWrapper {*/
+/*    margin-top: 20px;*/
+/*    background-color: #f8f9fa;*/
+/*    padding: 20px;*/
+/*    border-radius: 8px;*/
+/*}*/
+
+/*.editFormContainer,*/
+/*.athleteFormContainer {*/
+/*    max-width: 800px;*/
+/*    margin: 0 auto;*/
+/*    text-align: left;*/
+/*}*/
+
+/*.form {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 15px;*/
+/*}*/
+
+/*.inputGroup {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.inputGroup label {*/
+/*    margin-bottom: 5px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.inputGroup input,*/
+/*.inputGroup select {*/
+/*    padding: 8px;*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 4px;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*.countInput {*/
+/*    width: 100px;*/
+/*}*/
+
+/*.submitButton,*/
+/*.cancelButton,*/
+/*.editButton,*/
+/*.deleteButton {*/
+/*    padding: 10px;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*.submitButton {*/
+/*    background-color: #28a745;*/
+/*    color: white;*/
+/*}*/
+
+/*.submitButton:hover {*/
+/*    background-color: #218838;*/
+/*}*/
+
+/*.cancelButton {*/
+/*    background-color: #6c757d;*/
+/*    color: white;*/
+/*}*/
+
+/*.cancelButton:hover {*/
+/*    background-color: #5a6268;*/
+/*}*/
+
+/*.editButton {*/
+/*    background-color: #007bff;*/
+/*    color: white;*/
+/*    margin-right: 5px;*/
+/*}*/
+
+/*.editButton:hover {*/
+/*    background-color: #0056b3;*/
+/*}*/
+
+/*.deleteButton {*/
+/*    background-color: #dc3545;*/
+/*    color: white;*/
+/*}*/
+
+/*.deleteButton:hover {*/
+/*    background-color: #c82333;*/
+/*}*/
+
+/*.usersTable,*/
+/*.athleteTable {*/
+/*    width: 100%;*/
+/*    border-collapse: collapse;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/*.usersTable th,*/
+/*.usersTable td,*/
+/*.athleteTable th,*/
+/*.athleteTable td {*/
+/*    border: 1px solid #ddd;*/
+/*    padding: 10px;*/
+/*    text-align: left;*/
+/*}*/
+
+/*.usersTable th,*/
+/*.athleteTable th {*/
+/*    background-color: #007bff;*/
+/*    color: white;*/
+/*}*/
+
+/*.success {*/
+/*    color: #28a745;*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*.error {*/
+/*    color: #dc3545;*/
+/*    margin-top: 10px;*/
+/*}*/
+/*.container {*/
+/*    max-width: 100%;*/
+/*    margin: 0 auto;*/
+/*    padding: 20px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    min-height: 100vh;*/
+/*    background-color: #f8f9fa;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*!* Контейнер для кнопок у ряд *!*/
+/*.buttonRow {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: center;*/
+/*    gap: 3px;*/
+/*    margin: 10px 0;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.registerButton,*/
+/*.usersButton,*/
+/*.athleteButton,*/
+/*.myAthletesButton,*/
+/*.nonContactButton,*/
+/*.checkApplicationButton,*/
+/*.contactButton,*/
+/*.checkContactApplicationButton,*/
+/*.logoutButton {*/
+/*    background-color: #007bff;*/
+/*    color: white;*/
+/*    padding: 8px 12px;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*    font-size: 14px;*/
+/*    width: 100%;*/
+/*    max-width: 150px;*/
+/*    text-align: center;*/
+/*    transition: background-color 0.3s ease;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*.registerButton:hover,*/
+/*.usersButton:hover,*/
+/*.athleteButton:hover,*/
+/*.myAthletesButton:hover,*/
+/*.nonContactButton:hover,*/
+/*.checkApplicationButton:hover,*/
+/*.contactButton:hover,*/
+/*.checkContactApplicationButton:hover,*/
+/*.logoutButton:hover {*/
+/*    background-color: #0056b3;*/
+/*}*/
+
+/*.logoutButton {*/
+/*    background-color: #dc3545;*/
+/*}*/
+
+/*.logoutButton:hover {*/
+/*    background-color: #c82333;*/
+/*}*/
+
+/*.formWrapper {*/
+/*    margin-top: 20px;*/
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.editFormContainer {*/
+/*    background: #f9f9f9;*/
+/*    padding: 15px;*/
+/*    border-radius: 8px;*/
+/*    max-width: 500px;*/
+/*    min-height: auto;*/
+/*    max-height: 100%;*/
+/*    width: 100%;*/
+/*    margin: 0 auto;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*.athleteFormContainer {*/
+/*    background: #f9f9f9;*/
+/*    padding: 20px;*/
+/*    border-radius: 8px;*/
+/*    width: 100%;*/
+/*    min-height: 100vh;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*.form {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 10px;*/
+/*}*/
+
+/*.inputGroup {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    text-align: left;*/
+/*}*/
+
+/*.inputGroup label {*/
+/*    margin-bottom: 5px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.inputGroup input,*/
+/*.inputGroup select {*/
+/*    padding: 8px;*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 4px;*/
+/*    font-size: 14px;*/
+/*    max-width: 200px;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*.editFormContainer .inputGroup input,*/
+/*.editFormContainer .inputGroup select {*/
+/*    max-width: 300px;*/
+/*    padding: 6px;*/
+/*    font-size: 13px;*/
+/*}*/
+
+/*.athleteFormContainer .inputGroup input,*/
+/*.athleteFormContainer .inputGroup select {*/
+/*    max-width: 350px;*/
+/*    padding: 8px;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*.athleteFormContainer .inputGroup input[type="text"],*/
+/*.athleteFormContainer .inputGroup input[type="date"],*/
+/*.athleteFormContainer .inputGroup select {*/
+/*    max-width: 400px;*/
+/*}*/
+
+/*.editFormContainer .submitButton,*/
+/*.editFormContainer .cancelButton {*/
+/*    max-width: 300px;*/
+/*    width: 100%;*/
+/*    box-sizing: border-box;*/
+/*    padding: 6px 12px;*/
+/*    font-size: 13px;*/
+/*}*/
+
+/*.countInput {*/
+/*    width: 100px;*/
+/*    margin-bottom: 15px;*/
+/*}*/
+
+/*.usersTable,*/
+/*.athleteTable {*/
+/*    width: 100%;*/
+/*    max-width: 100%;*/
+/*    border-collapse: collapse;*/
+/*    margin: 20px auto;*/
+/*    background-color: #ffffff;*/
+/*    font-size: 14px;*/
+/*    table-layout: auto;*/
+/*    overflow-x: auto;*/
+/*    display: table;*/
+/*}*/
+
+/*.usersTable th,*/
+/*.usersTable td,*/
+/*.athleteTable th,*/
+/*.athleteTable td {*/
+/*    border: 1px solid #ddd;*/
+/*    padding: 8px;*/
+/*    text-align: center;*/
+/*    white-space: normal;*/
+/*    word-wrap: break-word;*/
+/*    min-width: 60px;*/
+/*    max-width: 120px;*/
+/*    box-sizing: border-box;*/
+/*    overflow: hidden;*/
+/*    text-overflow: ellipsis;*/
+/*}*/
+
+/*.athleteTable td input,*/
+/*.athleteTable td select {*/
+/*    width: 100%;*/
+/*    max-width: 110px;*/
+/*    padding: 6px;*/
+/*    font-size: 13px;*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 4px;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*.usersTable th,*/
+/*.athleteTable th {*/
+/*    background-color: #007bff;*/
+/*    color: white;*/
+/*    font-weight: bold;*/
+/*    padding: 8px;*/
+/*}*/
+
+/*.editButton,*/
+/*.deleteButton,*/
+/*.submitButton,*/
+/*.cancelButton {*/
+/*    padding: 8px 15px;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*.editButton {*/
+/*    background-color: #28a745;*/
+/*    color: white;*/
+/*    margin-right: 5px;*/
+/*}*/
+
+/*.editButton:hover {*/
+/*    background-color: #218838;*/
+/*}*/
+
+/*.deleteButton {*/
+/*    background-color: #dc3545;*/
+/*    color: white;*/
+/*}*/
+
+/*.deleteButton:hover {*/
+/*    background-color: #c82333;*/
+/*}*/
+
+/*.submitButton {*/
+/*    background-color: #007bff;*/
+/*    color: white;*/
+/*}*/
+
+/*.submitButton:hover {*/
+/*    background-color: #0056b3;*/
+/*}*/
+
+/*.cancelButton {*/
+/*    background-color: #6c757d;*/
+/*    color: white;*/
+/*}*/
+
+/*.cancelButton:hover {*/
+/*    background-color: #5a6268;*/
+/*}*/
+
+/*.success {*/
+/*    color: green;*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*.error {*/
+/*    color: red;*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*!* Адаптивність *!*/
+/*@media (max-width: 900px) {*/
+/*    .container {*/
+/*        padding: 15px;*/
+/*    }*/
+
+/*    .formWrapper {*/
+/*        padding: 15px;*/
+/*    }*/
+
+/*    .editFormContainer {*/
+/*        max-width: 400px;*/
+/*    }*/
+
+/*    .editFormContainer .inputGroup input,*/
+/*    .editFormContainer .inputGroup select,*/
+/*    .editFormContainer .submitButton,*/
+/*    .editFormContainer .cancelButton {*/
+/*        max-width: 250px;*/
+/*        padding: 5px;*/
+/*        font-size: 12px;*/
+/*    }*/
+
+/*    .athleteFormContainer .inputGroup input,*/
+/*    .athleteFormContainer .inputGroup select {*/
+/*        max-width: 350px;*/
+/*        padding: 7px;*/
+/*        font-size: 13px;*/
+/*    }*/
+
+/*    .athleteFormContainer .inputGroup input[type="text"],*/
+/*    .athleteFormContainer .inputGroup input[type="date"],*/
+/*    .athleteFormContainer .inputGroup select {*/
+/*        max-width: 350px;*/
+/*    }*/
+
+/*    .form {*/
+/*        gap: 8px;*/
+/*    }*/
+
+/*    .athleteButton,*/
+/*    .myAthletesButton,*/
+/*    .nonContactButton,*/
+/*    .checkApplicationButton,*/
+/*    .contactButton,*/
+/*    .logoutButton {*/
+/*        max-width: 120px;*/
+/*        font-size: 13px;*/
+/*        padding: 7px 10px;*/
+/*    }*/
+
+/*    .usersTable th,*/
+/*    .usersTable td,*/
+/*    .athleteTable th,*/
+/*    .athleteTable td {*/
+/*        min-width: 50px;*/
+/*        max-width: 100px;*/
+/*        font-size: 13px;*/
+/*        padding: 6px;*/
+/*    }*/
+
+/*    .athleteTable td input,*/
+/*    .athleteTable td select {*/
+/*        max-width: 90px;*/
+/*        font-size: 12px;*/
+/*        padding: 5px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 600px) {*/
+/*    .buttonRow {*/
+/*        gap: 3px;*/
+/*    }*/
+
+/*    .editFormContainer {*/
+/*        max-width: 300px;*/
+/*        padding: 10px;*/
+/*    }*/
+
+/*    .editFormContainer .inputGroup input,*/
+/*    .editFormContainer .inputGroup select,*/
+/*    .editFormContainer .submitButton,*/
+/*    .editFormContainer .cancelButton {*/
+/*        max-width: 200px;*/
+/*        padding: 4px;*/
+/*        font-size: 11px;*/
+/*    }*/
+
+/*    .athleteFormContainer .inputGroup input,*/
+/*    .athleteFormContainer .inputGroup select {*/
+/*        max-width: 300px;*/
+/*        padding: 6px;*/
+/*        font-size: 12px;*/
+/*    }*/
+
+/*    .athleteFormContainer .inputGroup input[type="text"],*/
+/*    .athleteFormContainer .inputGroup input[type="date"],*/
+/*    .athleteFormContainer .inputGroup select {*/
+/*        max-width: 300px;*/
+/*    }*/
+
+/*    .form {*/
+/*        gap: 6px;*/
+/*    }*/
+
+/*    .athleteButton,*/
+/*    .myAthletesButton,*/
+/*    .nonContactButton,*/
+/*    .checkApplicationButton,*/
+/*    .contactButton,*/
+/*    .logoutButton {*/
+/*        max-width: 100px;*/
+/*        font-size: 12px;*/
+/*        padding: 6px 8px;*/
+/*    }*/
+
+/*    .inputGroup input,*/
+/*    .inputGroup select {*/
+/*        max-width: 150px;*/
+/*    }*/
+
+/*    .usersTable th,*/
+/*    .usersTable td,*/
+/*    .athleteTable th,*/
+/*    .athleteTable td {*/
+/*        min-width: 40px;*/
+/*        max-width: 80px;*/
+/*        font-size: 12px;*/
+/*        padding: 5px;*/
+/*    }*/
+
+/*    .athleteTable td input,*/
+/*    .athleteTable td select {*/
+/*        max-width: 70px;*/
+/*        font-size: 11px;*/
+/*        padding: 4px;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 400px) {*/
+/*    .editFormContainer {*/
+/*        max-width: 280px;*/
+/*        padding: 8px;*/
+/*    }*/
+
+/*    .editFormContainer .inputGroup input,*/
+/*    .editFormContainer .inputGroup select,*/
+/*    .editFormContainer .submitButton,*/
+/*    .editFormContainer .cancelButton {*/
+/*        max-width: 180px;*/
+/*        padding: 3px;*/
+/*        font-size: 10px;*/
+/*    }*/
+
+/*    .athleteFormContainer .inputGroup input,*/
+/*    .athleteFormContainer .inputGroup select {*/
+/*        max-width: 250px;*/
+/*        padding: 5px;*/
+/*        font-size: 11px;*/
+/*    }*/
+
+/*    .athleteFormContainer .inputGroup input[type="text"],*/
+/*    .athleteFormContainer .inputGroup input[type="date"],*/
+/*    .athleteFormContainer .inputGroup select {*/
+/*        max-width: 250px;*/
+/*    }*/
+
+/*    .form {*/
+/*        gap: 5px;*/
+/*    }*/
+
+/*    .athleteButton,*/
+/*    .myAthletesButton,*/
+/*    .nonContactButton,*/
+/*    .checkApplicationButton,*/
+/*    .contactButton,*/
+/*    .logoutButton {*/
+/*        max-width: 80px;*/
+/*        font-size: 11px;*/
+/*        padding: 5px 6px;*/
+/*    }*/
+
+/*    .inputGroup input,*/
+/*    .inputGroup select {*/
+/*        max-width: 120px;*/
+/*    }*/
+
+/*    .usersTable th,*/
+/*    .usersTable td,*/
+/*    .athleteTable th,*/
+/*    .athleteTable td {*/
+/*        min-width: 30px;*/
+/*        max-width: 70px;*/
+/*        font-size: 11px;*/
+/*        padding: 4px;*/
+/*    }*/
+
+/*    .athleteTable td input,*/
+/*    .athleteTable td select {*/
+/*        max-width: 60px;*/
+/*        font-size: 10px;*/
+/*        padding: 3px;*/
+/*    }*/
+/*}*/
+
+/*********
+
 .container {
-    max-width: 600px;
-    margin: 50px auto;
+    max-width: 100%;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    overflow: hidden;
 }
 
+/* Контейнер для кнопок у ряд */
+.buttonRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.registerButton,
+.usersButton,
+.athleteButton,
+.myAthletesButton,
+.nonContactButton,
+.checkApplicationButton,
+.contactButton,
+.checkContactApplicationButton,
 .logoutButton {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #ff4d4f;
+    background-color: #007bff;
     color: white;
+    padding: 8px 12px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
 }
 
-.logoutButton:hover {
-    background-color: #d9363e;
-}
-
-.registerButton {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #1890ff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.registerButton:hover {
-    background-color: #40a9ff;
-}
-
-.usersButton {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #fa8c16;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.usersButton:hover {
-    background-color: #f5a623;
-}
-
-.athleteButton {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #52c41a;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.athleteButton:hover {
-    background-color: #73d13d;
-}
-
-.myAthletesButton {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #13c2c2;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.myAthletesButton:hover {
-    background-color: #36cfc9;
-}
-
-.nonContactButton {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #722ed1;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.nonContactButton:hover {
-    background-color: #9254de;
-}
-
+/* Унікальні кольори для нових кнопок */
 .contactButton {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #eb2f96;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+    background-color: #17a2b8; /* Бірюзовий для контактних заявок */
 }
 
 .contactButton:hover {
-    background-color: #f759ab;
+    background-color: #138496;
 }
 
-.success {
-    color: #52c41a;
-    margin-top: 1rem;
-    font-weight: 500;
+.checkContactApplicationButton {
+    background-color: #6f42c1; /* Фіолетовий для перевірки контактних заявок */
+}
+
+.checkContactApplicationButton:hover {
+    background-color: #5a32a3;
+}
+
+.registerButton:hover,
+.usersButton:hover,
+.athleteButton:hover,
+.myAthletesButton:hover,
+.nonContactButton:hover,
+.checkApplicationButton:hover,
+.logoutButton:hover {
+    background-color: #0056b3;
+}
+
+.logoutButton {
+    background-color: #dc3545;
+}
+
+.logoutButton:hover {
+    background-color: #c82333;
 }
 
 .formWrapper {
+    margin-top: 20px;
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f2f5;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1000;
-}
-
-.usersTable {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-.usersTable th,
-.usersTable td {
-    border: 1px solid #d9d9d9;
-    padding: 8px;
-    text-align: left;
-}
-
-.usersTable th {
-    background-color: #fafafa;
-    font-weight: 500;
-}
-
-.editButton {
-    padding: 6px 12px;
-    background-color: #1890ff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 8px;
-}
-
-.editButton:hover {
-    background-color: #40a9ff;
-}
-
-.deleteButton {
-    padding: 6px 12px;
-    background-color: #ff4d4f;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.deleteButton:hover {
-    background-color: #d9363e;
+    align-items: flex-start; /* Змінено для кращого позиціонування форм */
+    overflow: auto; /* Дозволяє прокрутку для великих форм */
 }
 
 .editFormContainer {
-    background: white;
-    padding: 2rem;
+    background: #f9f9f9;
+    padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    min-height: auto;
+    max-height: 100%;
     width: 100%;
-    max-width: 400px;
-    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .athleteFormContainer {
-    background: white;
-    padding: 2rem;
+    background: #f9f9f9;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 800px;
-    text-align: center;
+    min-height: auto; /* Змінено для адаптивності */
+    box-sizing: border-box;
+    overflow-x: auto; /* Дозволяє горизонтальну прокрутку для таблиць */
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 10px;
 }
 
 .inputGroup {
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-bottom: 1rem;
 }
 
 .inputGroup label {
-    margin-bottom: 0.5rem;
-    font-weight: 500;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .inputGroup input,
 .inputGroup select {
-    padding: 0.75rem;
-    border: 1px solid #d9d9d9;
+    padding: 8px;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 14px;
+    max-width: 200px;
+    box-sizing: border-box;
+}
+
+.editFormContainer .inputGroup input,
+.editFormContainer .inputGroup select {
+    max-width: 300px;
+    padding: 6px;
+    font-size: 13px;
+}
+
+.athleteFormContainer .inputGroup input,
+.athleteFormContainer .inputGroup select {
+    max-width: 350px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.athleteFormContainer .inputGroup input[type="text"],
+.athleteFormContainer .inputGroup input[type="date"],
+.athleteFormContainer .inputGroup select {
+    max-width: 400px;
+}
+
+.editFormContainer .submitButton,
+.editFormContainer .cancelButton {
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    font-size: 13px;
 }
 
 .countInput {
     width: 100px;
+    margin-bottom: 15px;
 }
 
+.usersTable,
 .athleteTable {
     width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    font-size: 14px;
+    table-layout: auto;
+    overflow-x: auto;
+    display: table;
 }
 
+.usersTable th,
+.usersTable td,
 .athleteTable th,
 .athleteTable td {
-    border: 1px solid #d9d9d9;
+    border: 1px solid #ddd;
     padding: 8px;
-    text-align: left;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    min-width: 80px; /* Збільшено для контактних заявок */
+    max-width: 140px; /* Збільшено для кращої читабельності */
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.athleteTable th {
-    background-color: #fafafa;
-    font-weight: 500;
-}
-
-.athleteTable input,
-.athleteTable select {
+.athleteTable td input,
+.athleteTable td select {
     width: 100%;
-    padding: 0.5rem;
+    max-width: 130px; /* Збільшено для більших полів */
+    padding: 6px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.usersTable th,
+.athleteTable th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.editButton,
+.deleteButton,
+.submitButton,
+.cancelButton {
+    padding: 8px 15px;
     border: none;
-    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.editButton {
+    background-color: #28a745;
+    color: white;
+    margin-right: 5px;
+}
+
+.editButton:hover {
+    background-color: #218838;
+}
+
+.deleteButton {
+    background-color: #dc3545;
+    color: white;
+}
+
+.deleteButton:hover {
+    background-color: #c82333;
 }
 
 .submitButton {
-    padding: 0.75rem;
-    background-color: #52c41a;
+    background-color: #007bff;
     color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-top: 1rem;
 }
 
 .submitButton:hover {
-    background-color: #73d13d;
+    background-color: #0056b3;
 }
 
 .cancelButton {
-    padding: 0.75rem;
-    background-color: #ff4d4f;
+    background-color: #6c757d;
     color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-top: 10px;
-    margin-left: 10px;
 }
 
 .cancelButton:hover {
-    background-color: #d9363e;
+    background-color: #5a6268;
+}
+
+.success {
+    color: green;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .error {
-    color: #ff4d4f;
-    margin-top: 0.5rem;
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Стилі для скролбара таблиць */
+.athleteTableWrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.athleteTableWrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.athleteTableWrapper::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 4px;
+}
+
+.athleteTableWrapper::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Адаптивність */
+@media (max-width: 900px) {
+    .container {
+        padding: 15px;
+    }
+
+    .formWrapper {
+        padding: 15px;
+        height: auto; /* Дозволяє адаптивну висоту */
+    }
+
+    .editFormContainer {
+        max-width: 400px;
+    }
+
+    .editFormContainer .inputGroup input,
+    .editFormContainer .inputGroup select,
+    .editFormContainer .submitButton,
+    .editFormContainer .cancelButton {
+        max-width: 250px;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .athleteFormContainer .inputGroup input,
+    .athleteFormContainer .inputGroup select {
+        max-width: 350px;
+        padding: 7px;
+        font-size: 13px;
+    }
+
+    .athleteFormContainer .inputGroup input[type="text"],
+    .athleteFormContainer .inputGroup input[type="date"],
+    .athleteFormContainer .inputGroup select {
+        max-width: 350px;
+    }
+
+    .form {
+        gap: 8px;
+    }
+
+    .athleteButton,
+    .myAthletesButton,
+    .nonContactButton,
+    .checkApplicationButton,
+    .contactButton,
+    .checkContactApplicationButton,
+    .logoutButton {
+        max-width: 120px;
+        font-size: 13px;
+        padding: 7px 10px;
+    }
+
+    .usersTable th,
+    .usersTable td,
+    .athleteTable th,
+    .athleteTable td {
+        min-width: 60px;
+        max-width: 100px;
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    .athleteTable td input,
+    .athleteTable td select {
+        max-width: 90px;
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .buttonRow {
+        gap: 3px;
+        flex-direction: column; /* Вертикальне розташування кнопок */
+        align-items: center;
+    }
+
+    .editFormContainer {
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    .editFormContainer .inputGroup input,
+    .editFormContainer .inputGroup select,
+    .editFormContainer .submitButton,
+    .editFormContainer .cancelButton {
+        max-width: 200px;
+        padding: 4px;
+        font-size: 11px;
+    }
+
+    .athleteFormContainer .inputGroup input,
+    .athleteFormContainer .inputGroup select {
+        max-width: 300px;
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .athleteFormContainer .inputGroup input[type="text"],
+    .athleteFormContainer .inputGroup input[type="date"],
+    .athleteFormContainer .inputGroup select {
+        max-width: 300px;
+    }
+
+    .form {
+        gap: 6px;
+    }
+
+    .athleteButton,
+    .myAthletesButton,
+    .nonContactButton,
+    .checkApplicationButton,
+    .contactButton,
+    .checkContactApplicationButton,
+    .logoutButton {
+        max-width: 100%;
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    .inputGroup input,
+    .inputGroup select {
+        max-width: 150px;
+    }
+
+    .usersTable th,
+    .usersTable td,
+    .athleteTable th,
+    .athleteTable td {
+        min-width: 50px;
+        max-width: 80px;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .athleteTable td input,
+    .athleteTable td select {
+        max-width: 70px;
+        font-size: 11px;
+        padding: 4px;
+    }
+}
+
+@media (max-width: 400px) {
+    .editFormContainer {
+        max-width: 280px;
+        padding: 8px;
+    }
+
+    .editFormContainer .inputGroup input,
+    .editFormContainer .inputGroup select,
+    .editFormContainer .submitButton,
+    .editFormContainer .cancelButton {
+        max-width: 180px;
+        padding: 3px;
+        font-size: 10px;
+    }
+
+    .athleteFormContainer .inputGroup input,
+    .athleteFormContainer .inputGroup select {
+        max-width: 250px;
+        padding: 5px;
+        font-size: 11px;
+    }
+
+    .athleteFormContainer .inputGroup input[type="text"],
+    .athleteFormContainer .inputGroup input[type="date"],
+    .athleteFormContainer .inputGroup select {
+        max-width: 250px;
+    }
+
+    .form {
+        gap: 5px;
+    }
+
+    .athleteButton,
+    .myAthletesButton,
+    .nonContactButton,
+    .checkApplicationButton,
+    .contactButton,
+    .checkContactApplicationButton,
+    .logoutButton {
+        max-width: 100%;
+        font-size: 11px;
+        padding: 5px 6px;
+    }
+
+    .inputGroup input,
+    .inputGroup select {
+        max-width: 120px;
+    }
+
+    .usersTable th,
+    .usersTable td,
+    .athleteTable th,
+    .athleteTable td {
+        min-width: 40px;
+        max-width: 70px;
+        font-size: 11px;
+        padding: 4px;
+    }
+
+    .athleteTable td input,
+    .athleteTable td select {
+        max-width: 60px;
+        font-size: 10px;
+        padding: 3px;
+    }
 }
