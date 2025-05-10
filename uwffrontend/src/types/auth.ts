@@ -285,17 +285,16 @@ export type ContactProgram =
     | "SHUAI_JIAO";
 
 export type WeightCategory =
-    | "UNDER_48KG"
-    | "UNDER_52KG"
-    | "UNDER_56KG"
-    | "UNDER_60KG"
-    | "UNDER_65KG"
-    | "UNDER_70KG"
-    | "UNDER_75KG"
-    | "UNDER_80KG"
-    | "UNDER_85KG"
-    | "UNDER_90KG"
-    | "OVER_90KG";
+    |"UNDER_50"
+    |"FROM_50_TO_55"
+    |"FROM_55_TO_60"
+    |"FROM_60_TO_65"
+    |"FROM_65_TO_70"
+    |"FROM_70_TO_75"
+    |"FROM_75_TO_80"
+    |"FROM_80_TO_85"
+    |"FROM_85_TO_90"
+    |"OVER_90";
 
 export type NonContactFieldValue =
     | string

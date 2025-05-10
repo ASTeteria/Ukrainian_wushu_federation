@@ -14970,7 +14970,18 @@ export default function Cabinet() {
                                                                 "18 років і старше"}
                                     </td>
                                     <td>{application.contactProgram }</td>
-                                    <td>{application.weightCategory }</td>
+                                    <td>
+                                        {application.weightCategory === "UNDER_50" ? "До 50 кг" :
+                                            application.weightCategory === "FROM_50_TO_55" ? "50-55 кг" :
+                                                application.weightCategory === "FROM_55_TO_60" ? "55-60 кг" :
+                                                    application.weightCategory === "FROM_60_TO_65" ? "60-65 кг" :
+                                                        application.weightCategory === "FROM_65_TO_70" ? "65-70 кг" :
+                                                            application.weightCategory === "FROM_70_TO_75" ? "Д70-75 кг" :
+                                                                application.weightCategory === "FROM_75_TO_80" ? "75-80 кг" :
+                                                                    application.weightCategory === "FROM_80_TO_85" ? "80-85 кг" :
+                                                                        application.weightCategory === "FROM_85_TO_90" ? "85-90 кг" :
+                                                                            application.weightCategory === "OVER_90" ? "Понад 90 кг" : "--"}
+                                    </td>
                                     <td>
                                         <button
                                             className={styles.editButton}
