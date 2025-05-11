@@ -198,7 +198,21 @@
 //     |"OVER_90";
 
 //=========
+export interface LoginRequestDTO {
+    username: string;
+    password: string;
+}
 
+export interface RegisterRequestDTO {
+    username: string;
+    password: string;
+    role: string;
+}
+
+export interface AuthResponseDTO {
+    accessToken: string;
+    refreshToken: string;
+}
 export interface UserDTO {
     id: number;
     username: string;
